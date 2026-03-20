@@ -17,7 +17,7 @@ public class ClickerScript : MonoBehaviour
 
     public static Action cortisolClicking;
 
-
+    [SerializeField] private ParticleSystem particle;
 
     private void OnEnable()
     {
@@ -25,7 +25,7 @@ public class ClickerScript : MonoBehaviour
         cortisolClicking += AddCortisol;
         cortisolClicking += ScreenShake;
         cortisolClicking += delayClicker;
-
+        cortisolClicking += Particle;
     }
     private void OnDisable()
     {
@@ -33,6 +33,7 @@ public class ClickerScript : MonoBehaviour
         cortisolClicking -= AddCortisol;
         cortisolClicking -= ScreenShake;
         cortisolClicking -= delayClicker;
+        cortisolClicking -= Particle;
     }
 
     private void Start()
@@ -77,5 +78,8 @@ public class ClickerScript : MonoBehaviour
         yield return new WaitForSeconds(delayClick);
         clickerButton.interactable = true;
     }
-
+    private void Particle()
+    {
+        particle.Play();
+    }
 }
