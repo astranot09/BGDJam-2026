@@ -30,6 +30,7 @@ public class ItemShopScript : MonoBehaviour
             return;
         CortisolManager.instance.MinesCortisol(itemSO.costCortisol);
         CortisolManager.instance.BonusCortisol(itemSO.bonusCortisol);
+        SoundManager.instance.PlayAudio(itemSO.soundType);
         Debug.Log("PPP");
         Instantiate(itemSO.spawnGameObject, spawner);
         BuyButton.interactable = false;

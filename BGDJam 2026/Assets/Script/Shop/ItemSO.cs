@@ -9,4 +9,5 @@ public class ItemSO : ScriptableObject
     public int costCortisol;
     public int bonusCortisol;
     public GameObject spawnGameObject;
+    public soundType soundType;
 }
