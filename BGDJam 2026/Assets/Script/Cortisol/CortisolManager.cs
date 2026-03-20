@@ -14,10 +14,21 @@ public class CortisolManager : MonoBehaviour
     }
 
     [SerializeField] private int cortisol;
+    [SerializeField] private int bonusCortisol = 1;
+    [SerializeField] private CortisolUI cortisolUI;
 
-    public void AddCortisol(int count)
+    private void Start()
     {
-        cortisol += count;
+        cortisolUI = GetComponent<CortisolUI>();
+    }
+    public void AddCortisol()
+    {
+        cortisol += bonusCortisol;
+        cortisolUI.UpdateUI();
+    }
+    public void BonusCortisol(int x)
+    {
+        bonusCortisol += x;
     }
 
     public int CheckCortisol()
@@ -27,5 +38,6 @@ public class CortisolManager : MonoBehaviour
     public void MinesCortisol(int count)
     {
         cortisol -= count;
+        cortisolUI.UpdateUI();
     }
 }

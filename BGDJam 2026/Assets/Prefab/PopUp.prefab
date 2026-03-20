@@ -152,9 +152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveUpAmount: 75
   duration: 1
-  fadeInDuration: 0.8
+  fadeInDuration: 0.7
   fadeOutDuration: 0.2
-  delayBeforeFadeOut: 0.3
+  delayBeforeFadeOut: 0.1
 --- !u!225 &3826823801677995667
 CanvasGroup:
   m_ObjectHideFlags: 0
