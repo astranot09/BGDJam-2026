@@ -19,11 +19,12 @@ public class SoundManager : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
+       // DontDestroyOnLoad(gameObject);
     }
 
 
     public AudioSource BGM;
+    public AudioSource SFX;
     public AudioSource unitySound;
     public AudioSource asepriteSound;
     public AudioSource emakSound;
@@ -33,13 +34,15 @@ public class SoundManager : MonoBehaviour
     [Header("BGM")]
     public AudioClip bgmMusic;
 
-    [Header("SFX")]
+    [Header("SFX Item")]
     public AudioClip unityClip;
     public AudioClip asepriteClip;
     public AudioClip emakClip;
     public AudioClip alarmClip;
     public AudioClip apiClip;
 
+    [Header("SFX")]
+    public AudioClip click;
 
     private void Start()
     {
@@ -92,8 +95,8 @@ public class SoundManager : MonoBehaviour
                 break;
         }
     }
-    //public void PlaySFX(AudioClip clip)
-    //{
-    //    SFX.PlayOneShot(clip);
-    //}
+    public void PlaySFX(AudioClip clip)
+    {
+        SFX.PlayOneShot(clip);
+    }
 }

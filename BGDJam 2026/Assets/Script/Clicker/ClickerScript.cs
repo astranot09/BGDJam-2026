@@ -63,6 +63,7 @@ public class ClickerScript : MonoBehaviour
 
     public void Clicking()
     {
+        SoundManager.instance.PlaySFX(SoundManager.instance.click);
         cortisolClicking.Invoke();
     }
 

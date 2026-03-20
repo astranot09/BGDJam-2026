@@ -28,6 +28,8 @@ public class ItemShopScript : MonoBehaviour
         Debug.Log("Hola");
         if(CortisolManager.instance.CheckCortisol() < itemSO.costCortisol)
             return;
+
+        Debug.Log("PPP1");
         CortisolManager.instance.MinesCortisol(itemSO.costCortisol);
         CortisolManager.instance.BonusCortisol(itemSO.bonusCortisol);
         SoundManager.instance.PlayAudio(itemSO.soundType);
