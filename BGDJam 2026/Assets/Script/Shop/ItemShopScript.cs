@@ -11,8 +11,6 @@ public class ItemShopScript : MonoBehaviour
     [SerializeField] private Button BuyButton;
     [SerializeField] private Transform spawner;
 
-    [SerializeField] private bool AlreadyBuy = false;
-
     private void Start()
     {
         SetUp();
@@ -28,13 +26,12 @@ public class ItemShopScript : MonoBehaviour
     public void Submit()
     {
         Debug.Log("Hola");
-        if(CortisolManager.instance.CheckCortisol() < itemSO.costCortisol || AlreadyBuy)
+        if(CortisolManager.instance.CheckCortisol() < itemSO.costCortisol)
             return;
         CortisolManager.instance.MinesCortisol(itemSO.costCortisol);
         CortisolManager.instance.BonusCortisol(itemSO.bonusCortisol);
         Debug.Log("PPP");
         Instantiate(itemSO.spawnGameObject, spawner);
-        AlreadyBuy = true;
         BuyButton.interactable = false;
     }
 }

@@ -1344,7 +1344,6 @@ MonoBehaviour:
   itemDescription: {fileID: 840131711}
   BuyButton: {fileID: 191838456}
   spawner: {fileID: 677435889}
-  AlreadyBuy: 0
 --- !u!1 &1054696944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,6 +2219,9 @@ MonoBehaviour:
   - Jangan malas-malasan Oi
   textPrefab: {fileID: 8745099651884126761, guid: 597c99f7286a9b245996290e13189a04, type: 3}
   pivot: {fileID: 1054696945}
+  cinemachineImpulseSource: {fileID: 0}
+  clickerButton: {fileID: 2017249472}
+  delayClick: 0.2
 --- !u!114 &2017249476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2229,12 +2231,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2017249470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd438dd108a0f284aa931a2da434f1d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ImpulseDefinition:
     ImpulseChannel: 1
-    ImpulseShape: 0
+    ImpulseShape: 4
     CustomImpulseShape:
       serializedVersion: 2
       m_Curve: []
@@ -2242,8 +2244,8 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     ImpulseDuration: 0.2
-    ImpulseType: 3
-    DissipationRate: 0
+    ImpulseType: 0
+    DissipationRate: 0.25
     RawSignal: {fileID: 0}
     AmplitudeGain: 1
     FrequencyGain: 1
@@ -2272,14 +2274,7 @@ MonoBehaviour:
     DissipationMode: 2
     DissipationDistance: 100
     PropagationSpeed: 343
-  DefaultVelocity: {x: 0, y: -1, z: 0}
-  LayerMask:
-    serializedVersion: 2
-    m_Bits: 1
-  IgnoreTag: 
-  UseImpactDirection: 0
-  ScaleImpactWithMass: 0
-  ScaleImpactWithSpeed: 0
+  DefaultVelocity: {x: 0.05, y: 0, z: 0}
 --- !u!1 &2056261720
 GameObject:
   m_ObjectHideFlags: 0

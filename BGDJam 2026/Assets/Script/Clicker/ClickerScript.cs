@@ -1,16 +1,19 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using DG.Tweening;
 using System;
-//using Cinemachine;
+using Unity.Cinemachine;
+using System.Collections;
 public class ClickerScript : MonoBehaviour
 {
     [SerializeField] private List<string> texts = new List<string>();
     [SerializeField] private GameObject textPrefab;
     [SerializeField] private Transform pivot;
-    //[SerializeField] private Cine
-
+    [SerializeField] private CinemachineImpulseSource cinemachineImpulseSource;
+    [SerializeField] private Button clickerButton;
+    [SerializeField] private float delayClick;
 
     public static Action cortisolClicking;
 
@@ -20,13 +23,21 @@ public class ClickerScript : MonoBehaviour
     {
         cortisolClicking += teksSpawn;
         cortisolClicking += AddCortisol;
+        cortisolClicking += ScreenShake;
+        cortisolClicking += delayClicker;
 
     }
     private void OnDisable()
     {
         cortisolClicking -= teksSpawn;
         cortisolClicking -= AddCortisol;
+        cortisolClicking -= ScreenShake;
+        cortisolClicking -= delayClicker;
+    }
 
+    private void Start()
+    {
+        cinemachineImpulseSource = GetComponent<CinemachineImpulseSource>();
     }
     public void teksSpawn()
     {
@@ -40,6 +51,10 @@ public class ClickerScript : MonoBehaviour
             txt.text = texts[index];
         }
     }
+    public void ScreenShake()
+    {
+        cinemachineImpulseSource.GenerateImpulse();
+    }
 
     public void AddCortisol()
     {
@@ -50,4 +65,16 @@ public class ClickerScript : MonoBehaviour
     {
         cortisolClicking.Invoke();
     }
+
+    public void delayClicker()
+    {
+        StartCoroutine(Cooldown());
+    }
+    private IEnumerator Cooldown()
+    {
+        clickerButton.interactable = false;
+        yield return new WaitForSeconds(delayClick);
+        clickerButton.interactable = true;
+    }
+
 }
