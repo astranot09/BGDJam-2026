@@ -13,7 +13,10 @@ public class InputFieldGrabber : MonoBehaviour
 
     public void Submit()
     {
-        GameManager.instance.playerName = inputText;
-        SceneManager.LoadScene("SampleScene");
+        if (!string.IsNullOrWhiteSpace(inputText))
+        {
+            GameManager.instance.playerName = inputText;
+            SceneManager.LoadScene("SampleScene");
+        }
     }
 }

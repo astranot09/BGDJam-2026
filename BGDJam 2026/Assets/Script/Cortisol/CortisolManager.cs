@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.Playables;
 public class CortisolManager : MonoBehaviour
 {
     public static CortisolManager instance;
@@ -17,7 +17,7 @@ public class CortisolManager : MonoBehaviour
     public int maxCortisol = 10000;
     [SerializeField] private int bonusCortisol = 1;
     [SerializeField] private CortisolUI cortisolUI;
-
+    public PlayableDirector director;
     private void Start()
     {
         cortisolUI = GetComponent<CortisolUI>();
@@ -28,7 +28,7 @@ public class CortisolManager : MonoBehaviour
         cortisolUI.UpdateUI();
         if (cortisol >= maxCortisol)
         {
-            Debug.Log("Play Ending");
+            PlayEnding();
         }
     }
     public void BonusCortisol(int x)
@@ -44,5 +44,11 @@ public class CortisolManager : MonoBehaviour
     {
         cortisol -= count;
         cortisolUI.UpdateUI();
+    }
+
+
+    private void PlayEnding()
+    {
+        director.Play();
     }
 }
