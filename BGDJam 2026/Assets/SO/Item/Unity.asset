@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a445bcc2a5dfef3468b9efa44b3fec77, type: 3}
   m_Name: Unity
   m_EditorClassIdentifier: 
-  nameItem: Unity
-  descriptionItem: Sekali Click +1, Unlock dengan 10 Cortisol
+  nameItem: UTINY
+  descriptionItem: sekali click +1, unlock dengan 10 cortisol
   iconItem: {fileID: 0}
   costCortisol: 10
   bonusCortisol: 1

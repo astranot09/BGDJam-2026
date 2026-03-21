@@ -19,7 +19,7 @@ public class ItemShopScript : MonoBehaviour
     private void SetUp()
     {
         itemImage.sprite = itemSO.iconItem;
-        itemName.text = itemSO.name;
+        itemName.text = itemSO.nameItem;
         itemDescription.text = itemSO.descriptionItem;
     }
 

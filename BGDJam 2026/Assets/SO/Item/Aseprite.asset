@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a445bcc2a5dfef3468b9efa44b3fec77, type: 3}
   m_Name: Aseprite
   m_EditorClassIdentifier: 
-  nameItem: Aseprite
-  descriptionItem: Sekali Click +3 Unlock dengan 50 Cortisol
+  nameItem: ASEBRITE
+  descriptionItem: sekali click +3 unlock dengan 50 cortisol
   iconItem: {fileID: 0}
   costCortisol: 50
   bonusCortisol: 3

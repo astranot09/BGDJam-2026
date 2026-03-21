@@ -264,10 +264,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hari yang indah ya.. Libur panjang, AKHIRNYA BEBAS JUGAAA!!!
+  m_text: LIBUR TELAH TIBA--LIBUR TELAH TIBA.. BISA BEBAS SEHARIAN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 34917d6dde7046f4aa6cebf0347e5d40, type: 2}
+  m_sharedMaterial: {fileID: -8657853090982403146, guid: 34917d6dde7046f4aa6cebf0347e5d40, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1560,10 +1560,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tidak ada yang bisa menghancurkan liburanku lagi >:)
+  m_text: WAKTUNYA MALAS MALASAN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 34917d6dde7046f4aa6cebf0347e5d40, type: 2}
+  m_sharedMaterial: {fileID: -8657853090982403146, guid: 34917d6dde7046f4aa6cebf0347e5d40, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1721,8 +1721,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Masukkan Namamu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 34917d6dde7046f4aa6cebf0347e5d40, type: 2}
+  m_sharedMaterial: {fileID: -8657853090982403146, guid: 34917d6dde7046f4aa6cebf0347e5d40, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
