@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class InputFieldGrabber : MonoBehaviour
@@ -13,5 +14,6 @@ public class InputFieldGrabber : MonoBehaviour
     public void Submit()
     {
         GameManager.instance.playerName = inputText;
+        SceneManager.LoadScene("SampleScene");
     }
 }
