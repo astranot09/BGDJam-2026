@@ -11,6 +11,6 @@ public class CortisolUI : MonoBehaviour
     }
     public void UpdateUI()
     {
-        cortisolText.text = CortisolManager.instance.CheckCortisol().ToString();
+        cortisolText.text = CortisolManager.instance.CheckCortisol().ToString()+" / "+ CortisolManager.instance.maxCortisol.ToString();
     }
 }

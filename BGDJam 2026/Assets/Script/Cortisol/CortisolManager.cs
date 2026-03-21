@@ -14,6 +14,7 @@ public class CortisolManager : MonoBehaviour
     }
 
     [SerializeField] private int cortisol;
+    public int maxCortisol = 10000;
     [SerializeField] private int bonusCortisol = 1;
     [SerializeField] private CortisolUI cortisolUI;
 
@@ -25,6 +26,10 @@ public class CortisolManager : MonoBehaviour
     {
         cortisol += bonusCortisol;
         cortisolUI.UpdateUI();
+        if (cortisol >= maxCortisol)
+        {
+            Debug.Log("Play Ending");
+        }
     }
     public void BonusCortisol(int x)
     {

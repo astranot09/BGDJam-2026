@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a445bcc2a5dfef3468b9efa44b3fec77, type: 3}
   m_Name: Alarm
   m_EditorClassIdentifier: 
-  nameItem: Alarm
-  descriptionItem: Sekali Click +40, Unlock dengan 1000 Cortisol
-  iconItem: {fileID: 0}
+  nameItem: ALARM
+  descriptionItem: sekali click +40, unlock dengan 1000 cortisol
+  iconItem: {fileID: -229256013063241344, guid: 0e0857d28e981e846adc0e25d25c88dd, type: 3}
   costCortisol: 1000
   bonusCortisol: 40
-  spawnGameObject: {fileID: 0}
+  spawnGameObject: {fileID: 387239843646912982, guid: fec3ad147ca13ef4f8115d87c1cb2965, type: 3}
   soundType: 3

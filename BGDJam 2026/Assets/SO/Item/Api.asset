@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a445bcc2a5dfef3468b9efa44b3fec77, type: 3}
   m_Name: Api
   m_EditorClassIdentifier: 
-  nameItem: Menyala Abangku
-  descriptionItem: Sekali Click +120, Unlock dengan 3000 Cortisol
-  iconItem: {fileID: 0}
+  nameItem: MENYALA ABANGKU
+  descriptionItem: sekali click +120, unlock dengan 3000 cortisol
+  iconItem: {fileID: -1069854531438289644, guid: 16f1efa55f2ef934784ef3fdd12a8766, type: 3}
   costCortisol: 3000
   bonusCortisol: 120
-  spawnGameObject: {fileID: 0}
+  spawnGameObject: {fileID: 2611063764700491846, guid: 57697638b8bde254e9279915cafda5bd, type: 3}
   soundType: 4
