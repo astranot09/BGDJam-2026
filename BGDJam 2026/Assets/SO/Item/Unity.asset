@@ -17,4 +17,5 @@ MonoBehaviour:
   iconItem: {fileID: 0}
   costCortisol: 10
   bonusCortisol: 1
-  spawnGameObject: {fileID: 6262614302794005927, guid: 424b8d91e63aa3642b5e57208b463a66, type: 3}
+  spawnGameObject: {fileID: 8321744217130468519, guid: c0e78724e93c8004081204ff01b1429c, type: 3}
+  soundType: 0

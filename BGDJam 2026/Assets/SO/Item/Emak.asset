@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameItem: Emak
   descriptionItem: Sekali Click +15, Unlock dengan 210 Cortisol
-  iconItem: {fileID: 0}
+  iconItem: {fileID: 4321510759708841170, guid: 46c2c268954f01c4c9a8308d0023f7f4, type: 3}
   costCortisol: 210
   bonusCortisol: 15
-  spawnGameObject: {fileID: 0}
+  spawnGameObject: {fileID: 1444701625067434665, guid: c5b2e0415f132a64ea8b29b7970f675a, type: 3}
   soundType: 2
