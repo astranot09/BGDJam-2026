@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameItem: UTINY
   descriptionItem: sekali click +1, unlock dengan 10 cortisol
-  iconItem: {fileID: 0}
+  iconItem: {fileID: 8062761108773680528, guid: 7482f7a925dc75d488d2481b0b4f7806, type: 3}
   costCortisol: 10
   bonusCortisol: 1
   spawnGameObject: {fileID: 8321744217130468519, guid: c0e78724e93c8004081204ff01b1429c, type: 3}

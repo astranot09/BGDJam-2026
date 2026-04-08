@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameItem: ASEBRITE
   descriptionItem: sekali click +3 unlock dengan 50 cortisol
-  iconItem: {fileID: 0}
+  iconItem: {fileID: 3005874346053503530, guid: 6381f9eb2116dbe4a9f53ef516f18ad7, type: 3}
   costCortisol: 50
   bonusCortisol: 3
   spawnGameObject: {fileID: 4030082831678564444, guid: 07f46c7aeb4b6ed41b694a8feaf57ddd, type: 3}
